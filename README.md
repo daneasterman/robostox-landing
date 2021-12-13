@@ -1,1 +1,1 @@
-# Custom Bulma Starter
+# Custom Landing Page Starter
