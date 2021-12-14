@@ -1,5 +1,39 @@
-<nav role="navigation" class="custom-nav navbar navbar-default"> 
-  <div class="nav-parent-flex">
-    
+<style>  
+  .nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .nav_parent {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    margin-top: 1.25rem;
+  }  
+  nav .logo_wrapper {
+    position: absolute;          
+  }
+  nav .logo {
+    width: 3.5rem;
+    margin-right: 1rem;
+    position: relative;
+    top: -10px;
+  }
+   nav .title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #BA28FF
+  } 
+</style>
+
+<nav class="nav" role="navigation">
+  <div class="container"> 
+    <div class="nav_parent">
+      <div class="logo_wrapper">
+        <img class="logo" src="img/robot-purple.svg" alt="Robostox Logo" />
+        <span class="title">Robostox</span>
+      </div>    
+    </div>
   </div>
 </nav>
