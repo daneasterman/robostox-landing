@@ -17,18 +17,27 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
 img {
 	vertical-align: middle;
 }
 
-.wallpaper,
-.picture-shadow,
-.picture-image {
-  display: block;
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
+section {	
+	min-height: 100vh;
+}
+/* Mobile */
+@media screen and (max-width: 799px) {
+  section {
+		margin-top: 1rem;
+    padding: 2rem 2rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 799px) {
+  section {
+    padding: 4rem;
+  }
 }
 
 .container {
@@ -54,29 +63,4 @@ img {
   .container {
     width: 1170px;
   }
-}
-
-.center, .center-column, .top, .right, .bottom, .left {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.center-column {
-    flex-direction: column;
-}
-
-.top    { align-items:     flex-start; }
-.right  { justify-content: flex-end;   }
-.bottom { align-items:     flex-end;   }
-.left   { justify-content: flex-start; }
-
-.single-spaced, .single-spaced * {
-    line-height: 1;
-}
-
-@media (max-width: 1024px) {
-	.desktop {
-		display: none;
-	}
 }
