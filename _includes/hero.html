@@ -1,20 +1,22 @@
 <section class="hero">  
-    <h1 class="hero_title">Our products for tech and crypto investors.</h1>
+    <h1 class="hero_title">Resources for tech and crypto investors.</h1>
     <div class="hero_flex">
       <div class="hero_item">              
         <div class="icon_wrapper">          
           <i class="fab fa-facebook"></i>
         </div>
         <p class="item_title">Substack</p>  
-        <p>Click here to join the Facebook group and become a member of our tech community.</p>
-      </div>  
+        <p class="blurb">Click here to join the Facebook group and become a member of our tech community.</p>
+        <a class="item_button" href="">Check It Out</a>
+      </div>
       <div class="hero_item">
         <div class="icon_wrapper">
           <i class="fab fa-facebook"></i>
         </div>
         <p class="item_title">Slack App</p>
-        <p>Click here to join the Facebook group and become a member of our tech community.</p>
-      </div>    
+        <p class="blurb">Click here to join the Facebook group and become a member of our tech community.</p>
+        <a class="item_button" href="">Check It Out</a>
+      </div>
     </div>
 </section>
 
@@ -23,8 +25,7 @@
   .hero h1 {
     font-size: 2rem;
     font-weight: 500;
-    text-align: center;       
-    /* color: #BA28FF;     */
+    text-align: center;    
     margin-left: auto;
     margin-right: auto;
     line-height: 1.25;
@@ -50,34 +51,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0 1 300px;
+    flex: 0 1 350px;
     margin-bottom: 2.5rem;    
     border: 2px solid #BA28FF;    
     border-radius: 12px;
     padding: 2rem;    
   }
-  .hero_item .item_title {
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-bottom: 0.75rem;
-  }
-
   @media screen and (min-width: 750px) {
     .hero_item:first-child {
       margin-right: 5rem;
     }
-  }   
-  .hero_item p {
-    font-size: 1.1rem;
-    text-align: center;
-    /* color: #BA28FF; */
   }
-
   .icon_wrapper i {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-    /* color: #BA28FF; */
+    margin-bottom: 1rem;    
   }
+  .item_title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }  
+  .blurb {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .item_button {
+    border-radius: 12px;
+    font-size: 1.1rem;
+    padding: 12px 2rem 12px 2rem;
+    border: 2px solid #BA28FF; 
+    color: white;
+    font-weight: 500;
+  }
+  .item_button:hover {
+    background-color: #BA28FF
+  }  
 
 </style>
 
