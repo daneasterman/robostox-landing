@@ -1,6 +1,8 @@
 html {
 	background-color: black;
 	color: #fff;
+	/* main trim / highlight purple color: */
+	/* color: #BA28FF; */
 	font-size: 16px;
 	font-family: "Poppins", sans-serif;
   -moz-osx-font-smoothing: grayscale;
